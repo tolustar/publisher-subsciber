@@ -33,7 +33,7 @@ The above endpoint listens for messages from the PUBLISHER
 ###### Mac OS
 
 ```
-start-server.sh
+sh start-server.sh
 ```
 
 ###### Windows OS

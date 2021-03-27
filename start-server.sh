@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 npm install
-npm install:all
+npm run install:all
 echo "==== Publisher and Subscriber dependencies installed ==== \n\n"
 
 npm start
