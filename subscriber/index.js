@@ -5,7 +5,7 @@ const app = express();
 
 const cors = require("cors");
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 6000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -31,3 +31,5 @@ app.post("/:route", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Subscriber listening on port ${PORT}!`);
 });
+
+module.exports = app;

@@ -10,8 +10,6 @@ exports.subscribe = async (topicToSubscribe, urlToSubscribe) => {
   } else {
     if (!subscribedUrls.includes(urlToSubscribe)) {
       subscribedUrls.push(urlToSubscribe);
-    } else {
-      message = `${urlToSubscribe} already subscribed to ${topicToSubscribe}`;
     }
     await storage.setItem(topicToSubscribe, subscribedUrls);
   }

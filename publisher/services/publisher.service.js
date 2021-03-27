@@ -4,7 +4,7 @@ const axios = require("axios");
 exports.publishTopic = async (topic, data) => {
   const subscribedUrls = await storage.getItem(topic);
 
-  let message = "Success";
+  let message = "Message sent successfully";
 
   const successResponseUrls = [];
 
@@ -24,7 +24,7 @@ exports.publishTopic = async (topic, data) => {
           console.log(
             `An error occured while sending message to ${url} subscribed to ${topic}`,
             `Error details ===> `,
-            error.response.data
+            error.response
           );
         }
       }

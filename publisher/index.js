@@ -10,7 +10,7 @@ const {
   genericErrorHandler,
 } = require("./config/error.config");
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -23,3 +23,5 @@ app.use(genericErrorHandler);
 app.listen(PORT, () => {
   console.log(`Publisher listening on port ${PORT}!`);
 });
+
+module.exports = app;

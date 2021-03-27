@@ -74,6 +74,12 @@ Localstorage (node-persist) was used to store data locally in order to reduce co
 Any storage system can replace the usage of Localstorage (node-persist).
 Such storage system includes - redis, mysql, mssql, mongodb, postgresql etc.
 
+#### Running Test scripts
+
+```
+npm run test
+```
+
 #### Issues
 
 If you have any challenge please create a new [issue](https://github.com/tolustar/publisher-subsciber/issues) or send a [mail](info@tolustar.com)
